@@ -1,0 +1,17 @@
+{
+  "name": "customerprofilerbot",
+  "version": "0.0.1",
+  "description": "Customer Profiler Bot",
+  "main": "index.js",
+  "dependencies": {
+    "botpress": "1.x",
+    "botpress-messenger": "^2.2.9",
+    "botpress-web": "1.x"
+  },
+  "scripts": {
+    "start": "botpress start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gayan N. Wimalarathna",
+  "license": "Botpress Proprietary License"
+}
