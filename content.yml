@@ -36,7 +36,7 @@ textWithQuickRepliesIcon:
 textWithQuickRepliesIcon_reply:
   - You pressed button shopping item {{item}}
 
-  textWithQuickReplies:
+textWithQuickReplies:
   - text: This is text with Quick Replies
     quick_replies:
       - <.B1> Button 1 #Starting with a '.' before B1 will prepend the name of the bloc in uppercase
