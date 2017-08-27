@@ -1,16 +1,15 @@
 welcome: # this is the #welcome bloc referenced in index.js
   - typing: true
     text: # Picks one randomly
-      - Hey {{ profileid}}!
+      - Hey there!
       - Hello {{user.first_name}}
       - Good day :)
-  - text: This is just a regular Hello World, I don't do anything ;)
+  - text: Welcome to Hopknock, How can I assist you. ;)
     typing: 2s
-  - text: Make sure to check out the 'index.js' file to see how I work
-    typing: true
-  - wait: 5s
-  - text: You can say goodbye now
-    typing: 1s
+  - text: You can select one option from below.
+    quick_replies:
+      - <.B1> Store #Starting with a '.' before B1 will prepend the name of the bloc in uppercase
+      - <.B2> Contact Us
 
 goodbye:
   - text: You are leaving because of reason {{reason}}
@@ -39,8 +38,14 @@ textWithQuickRepliesIcon_reply:
 textWithQuickReplies:
   - text: This is text with Quick Replies
     quick_replies:
-      - <.B1> Button 1 #Starting with a '.' before B1 will prepend the name of the bloc in uppercase
-      - <.B2> Button 2
+      - <.B3> Button 1 #Starting with a '.' before B1 will prepend the name of the bloc in uppercase
+      - <.B4> Button 2
 
 textWithQuickReplies_reply:
   - You pressed button '{{button}}'
+
+storeSelection_reply:
+  - Well, You have selected the '{{button}}'.
+
+contactUsSelection_reply:
+  - Well, You have selected the '{{button}}'.

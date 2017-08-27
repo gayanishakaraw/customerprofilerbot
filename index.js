@@ -63,4 +63,12 @@ bp.hear('TEXTWITHQUICKREPLIES.B1', (event, next) => {
 bp.hear('TEXTWITHQUICKREPLIES.B2', (event, next) => {
   event.reply('#textWithQuickReplies_reply', { button: 'Button 2' })
 })
+
+bp.hear('WELCOME.B1', (event, next) => {
+  event.reply('#storeSelection_reply', { button: 'Store' })
+})
+
+bp.hear('WELCOME.B2', (event, next) => {
+  event.reply('#contactUsSelection_reply', { button: 'Contact Us' })
+})
 }
