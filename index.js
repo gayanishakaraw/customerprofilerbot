@@ -42,9 +42,9 @@ module.exports = function(bp) {
     text: /items|buy|shop|shopping|goods/i
   }, (event, next) => {
   event.reply('#textWithQuickRepliesIcon', {
-    icon1: `${process.env.BOT_BASE_URL}/formal_men.png`,
-    icon2: `${process.env.BOT_BASE_URL}/shoes_men.png`,
-    icon3: `${process.env.BOT_BASE_URL}/t-shirt_men.png`
+    icon1: `https://d30y9cdsu7xlg0.cloudfront.net/png/110381-200.png`,
+    icon2: `https://d30y9cdsu7xlg0.cloudfront.net/png/72758-200.png`,
+    icon3: `https://d30y9cdsu7xlg0.cloudfront.net/png/60394-200.png`
   })
 })
 

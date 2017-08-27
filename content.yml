@@ -1,7 +1,7 @@
 welcome: # this is the #welcome bloc referenced in index.js
   - typing: true
     text: # Picks one randomly
-      - Hey there!
+      - Hey {{ profileid}}!
       - Hello {{user.first_name}}
       - Good day :)
   - text: This is just a regular Hello World, I don't do anything ;)
