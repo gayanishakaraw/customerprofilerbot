@@ -34,6 +34,9 @@ jspm_packages
 # Optional npm cache directory
 .npm
 
+#fb connection
+botpress-messenger.config.yml
+
 # Optional eslint cache
 .eslintcache
 

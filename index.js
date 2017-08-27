@@ -51,4 +51,16 @@ module.exports = function(bp) {
 bp.hear(/QR_(FORMAL|SHOES|TSHIRT)_BUTTON/, (event, next) => {
   event.reply('#textWithQuickRepliesIcon_reply', { item: event.captured[0].toLowerCase() })
 })
+
+bp.hear('MENU_SEND_EX_02', (event, next) => {
+  event.reply('#textWithQuickReplies')
+})
+
+bp.hear('TEXTWITHQUICKREPLIES.B1', (event, next) => {
+  event.reply('#textWithQuickReplies_reply', { button: 'Button 1' })
+})
+
+bp.hear('TEXTWITHQUICKREPLIES.B2', (event, next) => {
+  event.reply('#textWithQuickReplies_reply', { button: 'Button 2' })
+})
 }
