@@ -103,7 +103,7 @@ bp.hear('STORESELECTION_REPLY.B4', (event, next) => {
 
 bp.hear('ITEMSSELECTION_REPLY.B1', (event, next) => {
   this.gender = 'Men';
-  event.reply('#itemsSelection_reply', { button: 'Men' })
+  event.reply('#genderSelection_reply', { button: 'Men' })
 })
 }
 
