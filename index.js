@@ -36,4 +36,19 @@ module.exports = function(bp) {
       reason: 'unknown'
     })
   })
+
+  bp.hear({
+    type: /message|text/i,
+    text: /items|buy|shop|shopping|goods/i
+  }, (event, next) => {
+  event.reply('#textWithQuickRepliesIcon', {
+    icon1: `${process.env.BOT_BASE_URL}/formal_men.png`,
+    icon2: `${process.env.BOT_BASE_URL}/shoes_men.png`,
+    icon3: `${process.env.BOT_BASE_URL}/t-shirt_men.png`
+  })
+})
+
+bp.hear(/QR_(FORMAL|SHOES|TSHIRT)_BUTTON/, (event, next) => {
+  event.reply('#textWithQuickRepliesIcon_reply', { item: event.captured[0].toLowerCase() })
+})
 }
