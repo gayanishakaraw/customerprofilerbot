@@ -20,6 +20,15 @@
 */
 
 module.exports = function(bp) {
+    //var username = profile.id;
+    var gender = undefined;
+    var wearType = undefined;
+    var bodyType = undefined;
+    var dressType = undefined;
+    var size = undefined;
+    var sleeveType = undefined;
+    var color = undefined;
+
   // Listens for a first message (this is a Regex)
   // GET_STARTED is the first message you get on Facebook Messenger
   bp.hear(/GET_STARTED|hello|hi|test|hey|holla/i, (event, next) => {
@@ -71,4 +80,30 @@ bp.hear('WELCOME.B1', (event, next) => {
 bp.hear('WELCOME.B2', (event, next) => {
   event.reply('#contactUsSelection_reply', { button: 'Contact Us' })
 })
+
+bp.hear(/STORESELECTION_REPLY.B1|STORESELECTION_REPLY.B2|STORESELECTION_REPLY.B3|STORESELECTION_REPLY.B4/i, (event, next) => {
+  this.wearType = 'Party';
+  event.reply('#itemsSelection_reply', { button: 'Party' })
+})
+
+bp.hear('STORESELECTION_REPLY.B2', (event, next) => {
+  this.wearType = 'Casual';
+  event.reply('#itemsSelection_reply', { button: 'Casual' })
+})
+
+bp.hear('STORESELECTION_REPLY.B3', (event, next) => {
+  this.wearType = 'Formal';
+  event.reply('#itemsSelection_reply', { button: 'Formal' })
+})
+
+bp.hear('STORESELECTION_REPLY.B4', (event, next) => {
+  this.wearType = 'Function';
+  event.reply('#itemsSelection_reply', { button: 'Function' })
+})
+
+bp.hear('ITEMSSELECTION_REPLY.B1', (event, next) => {
+  this.gender = 'Men';
+  event.reply('#itemsSelection_reply', { button: 'Men' })
+})
 }
+

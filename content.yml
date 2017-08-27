@@ -46,6 +46,42 @@ textWithQuickReplies_reply:
 
 storeSelection_reply:
   - Well, You have selected the '{{button}}'.
+  - text: Select what type type of wear.
+    typing: 2s  
+    quick_replies:
+      - <.B1> Patry #Starting with a '.' before B1 will prepend the name of the bloc in uppercase
+      - <.B2> Casual
+      - <.B3> Formal
+      - <.B4> Function
 
 contactUsSelection_reply:
   - Well, You have selected the '{{button}}'.
+  - text: Go to www.hopknock.com/ContactUs
+
+itemsSelection_reply:
+  - You are looking for a '{{button}}' dress.
+  - text: You are looking for?
+    typing: 2s  
+    quick_replies:
+      - <.B1> Men 
+      - <.B2> Ladies
+      - <.B3> Kids
+
+genderSelection_reply:
+  - Fine, you need shop for '{{button}}'.
+  - text: Select the body type.
+    typing: 2s  
+    quick_replies:
+      - payload: QR_FORMAL_BUTTON
+        title: FormalDress
+        image_url: "{{{icon1}}}"
+        content_type: text
+      - payload: QR_SHOES_BUTTON
+        title: Shoes
+        image_url: "{{{icon2}}}"
+        content_type: text
+      - payload: QR_TSHIRT_BUTTON
+        title: Tshirt
+        image_url: "{{{icon3}}}"
+        content_type: text   
+      
