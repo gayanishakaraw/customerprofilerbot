@@ -92,8 +92,10 @@ genderSelection_reply:
         image_url: "{{{invertedTrangle}}}"
         content_type: text     
 
-bodyTypeSection_reply:
-  - You choosed {{bodyType}} as your body type. 
+bodyTypeSelection_reply:
+  - You choosed {{bodyType}} as your body type.
+
+carouselOfCities: 
   - template_type: generic
     elements:
       {{#items}}

@@ -124,11 +124,11 @@ bp.hear('ITEMSSELECTION_REPLY.B1', (event, next) => {
 })
 
 bp.hear(/QR_(OVEL|TRANGLE|RECTANGLE|RHOMBOID|ITRANGLE)_BUTTON/, (event, next) => {
-  event.reply('#bodyTypeSection_reply', { bodyType: event.captured[0].toLowerCase() }, { items:this.catalog })
+  event.reply('#bodyTypeSelection_reply', { bodyType: event.captured[0].toLowerCase() })
 })
 
-//bp.hear('GENDERSELECTION_REPLY', (event, next) => {
-//  event.reply('#carouselOfCities', { items: staticData.items })
-//})
+bp.hear('QR_TRANGLE_BUTTON', (event, next) => {
+  event.reply('#carouselOfCities', { items:this.catalog })
+})
 }
 
