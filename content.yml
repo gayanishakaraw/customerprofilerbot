@@ -85,7 +85,7 @@ genderSelection_reply:
         content_type: text  
       - payload: QR_RHOMBOID_BUTTON
         title: Rhomboid
-        image_url: "{{{romoboid}}}"
+        image_url: "{{{romboid}}}"
         content_type: text
       - payload: QR_ITRANGLE_BUTTON
         title: Inverted Trangle

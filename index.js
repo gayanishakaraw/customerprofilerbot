@@ -104,11 +104,11 @@ bp.hear('STORESELECTION_REPLY.B4', (event, next) => {
 bp.hear('ITEMSSELECTION_REPLY.B1', (event, next) => {
   this.gender = 'Men';
   event.reply('#genderSelection_reply', {
-    ovel: `https://customerprofilerbot.herokuapp.com/bodyshapes/ovel.png`,
-    trangle: `https://customerprofilerbot.herokuapp.com/bodyshapes/Trangle.png`,
-    rectangles: `https://customerprofilerbot.herokuapp.com/bodyshapes/Rectangles.png`,
-    romoboid: `https://customerprofilerbot.herokuapp.com/bodyshapes/Romoboid.png`,
-    invertedTrangle: `https://customerprofilerbot.herokuapp.com/bodyshapes/InvertedTrangle.png`    
+    ovel: `https://customerprofilerbot.herokuapp.com/bodyshapes/ovel.PNG`,
+    trangle: `https://customerprofilerbot.herokuapp.com/bodyshapes/Trangle.PNG`,
+    rectangles: `https://customerprofilerbot.herokuapp.com/bodyshapes/Rectangles.PNG`,
+    romboid: `https://customerprofilerbot.herokuapp.com/bodyshapes/Romoboid.PNG`,
+    invertedTrangle: `https://customerprofilerbot.herokuapp.com/bodyshapes/InvertedTrangle.PNG`    
   })
 })
 }
