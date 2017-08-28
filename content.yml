@@ -72,23 +72,23 @@ genderSelection_reply:
     typing: 2s  
     quick_replies:
       - payload: QR_OVEL_BUTTON
-        title: Ovel
+        title: 
         image_url: "{{{ovel}}}"
         content_type: text
       - payload: QR_TRANGLE_BUTTON
-        title: Trangle
+        title: 
         image_url: "{{{trangle}}}"
         content_type: text
       - payload: QR_RECTANGLE_BUTTON
-        title: Rectangle
+        title: 
         image_url: "{{{rectangles}}}"
         content_type: text  
       - payload: QR_RHOMBOID_BUTTON
-        title: Rhomboid
+        title: 
         image_url: "{{{romboid}}}"
         content_type: text
       - payload: QR_ITRANGLE_BUTTON
-        title: Inverted Trangle
+        title: 
         image_url: "{{{invertedTrangle}}}"
         content_type: text     
       
