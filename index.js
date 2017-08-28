@@ -18,6 +18,7 @@
   Documentation: https://botpress.io/docs
   Our Slack Community: https://slack.botpress.io
 */
+const staticData = require('../static_data')
 
 module.exports = function(bp) {
     //var username = profile.id;
@@ -74,14 +75,14 @@ bp.hear('TEXTWITHQUICKREPLIES.B2', (event, next) => {
 })
 
 bp.hear('WELCOME.B1', (event, next) => {
-  event.reply('#storeSelection_reply', { button: 'Store' })
+  event.reply('#storeSelection_reply', { button: 'Shop' })
 })
 
 bp.hear('WELCOME.B2', (event, next) => {
   event.reply('#contactUsSelection_reply', { button: 'Contact Us' })
 })
 
-bp.hear(/STORESELECTION_REPLY.B1|STORESELECTION_REPLY.B2|STORESELECTION_REPLY.B3|STORESELECTION_REPLY.B4/i, (event, next) => {
+bp.hear('STORESELECTION_REPLY.B1', (event, next) => {
   this.wearType = 'Party';
   event.reply('#itemsSelection_reply', { button: 'Party' })
 })
@@ -111,5 +112,13 @@ bp.hear('ITEMSSELECTION_REPLY.B1', (event, next) => {
     invertedTrangle: `https://customerprofilerbot.herokuapp.com/bodyshapes/InvertedTrangle.PNG`    
   })
 })
+
+bp.hear(/QR_(OVEL|TRANGLE|RECTANGLE|RHOMBOID|ITRANGLE)_BUTTON/, (event, next) => {
+  event.reply('#bodyTypeSection_reply', { bodyType: event.captured[0].toLowerCase() })
+})
+
+//bp.hear('GENDERSELECTION_REPLY', (event, next) => {
+//  event.reply('#carouselOfCities', { items: staticData.items })
+//})
 }
 

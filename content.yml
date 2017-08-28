@@ -8,7 +8,7 @@ welcome: # this is the #welcome bloc referenced in index.js
     typing: 2s
   - text: You can select one option from below.
     quick_replies:
-      - <.B1> Store #Starting with a '.' before B1 will prepend the name of the bloc in uppercase
+      - <.B1> Shop #Starting with a '.' before B1 will prepend the name of the bloc in uppercase
       - <.B2> Contact Us
 
 goodbye:
@@ -63,7 +63,7 @@ itemsSelection_reply:
   - text: You are looking for?
     typing: 2s  
     quick_replies:
-      - <.B1> Men 
+      - <.B1> Mens 
       - <.B2> Ladies
       - <.B3> Kids
 
@@ -91,4 +91,16 @@ genderSelection_reply:
         title: Inverted Trangle
         image_url: "{{{invertedTrangle}}}"
         content_type: text     
-      
+
+bodyTypeSection_reply:
+  - You choosed {{bodyType}} as your body type. 
+  - template_type: generic
+    elements:
+      {{#items}}
+      - title: {{name}}
+        sku: {{sku}}
+        image_url: "{{{image}}}"
+        price: {{price}}
+        buttons:
+          - <PICK_ITEM_{{sku}}> Pick
+      {{/items}}    
