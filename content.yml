@@ -68,20 +68,27 @@ itemsSelection_reply:
       - <.B3> Kids
 
 genderSelection_reply:
-  - Fine, you need shop for '{{button}}'.
   - text: Select the body type.
     typing: 2s  
     quick_replies:
-      - payload: QR_FORMAL_BUTTON
-        title: FormalDress
-        image_url: "{{{icon1}}}"
+      - payload: QR_OVEL_BUTTON
+        title: Ovel
+        image_url: "{{{ovel}}}"
         content_type: text
-      - payload: QR_SHOES_BUTTON
-        title: Shoes
-        image_url: "{{{icon2}}}"
+      - payload: QR_TRANGLE_BUTTON
+        title: Trangle
+        image_url: "{{{trangle}}}"
         content_type: text
-      - payload: QR_TSHIRT_BUTTON
-        title: Tshirt
-        image_url: "{{{icon3}}}"
-        content_type: text   
+      - payload: QR_RECTANGLE_BUTTON
+        title: Rectangle
+        image_url: "{{{rectangles}}}"
+        content_type: text  
+      - payload: QR_RHOMBOID_BUTTON
+        title: Rhomboid
+        image_url: "{{{romoboid}}}"
+        content_type: text
+      - payload: QR_ITRANGLE_BUTTON
+        title: Inverted Trangle
+        image_url: "{{{invertedTrangle}}}"
+        content_type: text     
       
