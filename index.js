@@ -18,7 +18,7 @@
   Documentation: https://botpress.io/docs
   Our Slack Community: https://slack.botpress.io
 */
-
+const staticData = require('./static_data');
 
 module.exports = function(bp) {
     //var username = profile.id;
@@ -29,8 +29,6 @@ module.exports = function(bp) {
     var size = undefined;
     var sleeveType = undefined;
     var color = undefined;
-
-    //const staticData = require('../static_data');
 
     var catalog = [
     { name: 'LeBond Fashion - Slim Fit Shirt', sku: 'LBFS-81060-COL04', image: 'https://hameedia.com/media/catalog/product/optimized/0/4/04f2fc83c449f2edc679b5ecfa45d7b0/aus_web-445_0001_layer_18.jpg', price: 'Rs 1,990.00' },

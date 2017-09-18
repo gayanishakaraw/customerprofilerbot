@@ -2,11 +2,11 @@
 # This is regular YAML syntax. See http://docs.ansible.com/ansible/YAMLSyntax.html
 # You can override these settings with ENV variables. They are commented below.
 
-# hostname: "" # MESSENGER_HOST
+hostname: "customerprofilerbot.herokuapp.com" # MESSENGER_HOST
 
-# applicationID: "" # MESSENGER_APP_ID
-# accessToken: "" # MESSENGER_ACCESS_TOKEN
-# appSecret: "" # MESSENGER_APP_SECRET
+applicationID: "1458054270937928" # MESSENGER_APP_ID
+accessToken: "EAAUuF7bh60gBAMofwtlmf5nSZAWwZA49AVYdZBBaga7xKtk719unVi4Y3qBNJgC73QyFkfLSQvvZAn3GaBFKIclbvT7STdZBUVnWgrVk9FYZAFT1ZBhl4jLM7hTpcU3MIwKc7lLyMWXIhftoCFvncHAokORDc9hSIxF8EjdDSTNFwZDZD" # MESSENGER_ACCESS_TOKEN
+appSecret: "897b273508dd1c8500f74c04a4dfa452" # MESSENGER_APP_SECRET
 
 # verifyToken: "" # MESSENGER_VERIFY_TOKEN
 
