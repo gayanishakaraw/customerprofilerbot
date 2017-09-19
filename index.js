@@ -18,7 +18,7 @@
   Documentation: https://botpress.io/docs
   Our Slack Community: https://slack.botpress.io
 */
-const staticData = require('./static_data');
+const staticData = require('../static_data');
 
 module.exports = function(bp) {
     //var username = profile.id;
@@ -128,6 +128,9 @@ bp.hear('STORESELECTION_REPLY.QR_OVEL_BUTTON', (event, next) => {
    //event.reply('#carouselOfCities', { items:this.catalog })
 })
 
+bp.hear('MENU_SEND_EX_04', (event, next) => {
+  event.reply('#carouselOfCities', { items: staticData.items })
+})
 //bp.hear('QR_TRANGLE_BUTTON', (event, next) => {
  // event.reply('#carouselOfCities', { items:this.catalog })
 //})
