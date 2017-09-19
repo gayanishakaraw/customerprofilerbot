@@ -18,9 +18,12 @@
   Documentation: https://botpress.io/docs
   Our Slack Community: https://slack.botpress.io
 */
-const staticData = require('../static_data');
+
 
 module.exports = function(bp) {
+
+  const staticData = require('../static_data');
+  
     //var username = profile.id;
     var gender = undefined;
     var wearType = undefined;
