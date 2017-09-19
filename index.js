@@ -22,8 +22,8 @@
 
 module.exports = function(bp) {
 
-  const staticData = require('../static_data');
-  
+ // const staticData = require('../static_data');
+
     //var username = profile.id;
     var gender = undefined;
     var wearType = undefined;
