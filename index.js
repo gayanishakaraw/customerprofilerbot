@@ -121,7 +121,9 @@ bp.hear('ITEMSSELECTION_REPLY.B1', (event, next) => {
   })
 })
 
-bp.hear(/QR_(OVEL|TRANGLE|RECTANGLE|RHOMBOID|ITRANGLE)_BUTTON/, (event, next) => {
+bp.hear('STORESELECTION_REPLY.QR_OVEL_BUTTON', (event, next) => {
+//bp.hear(/QR_(OVEL|TRANGLE|RECTANGLE|RHOMBOID|ITRANGLE)_BUTTON/, (event, next) => {
+  this.bodyType = event.captured[0].toLowerCase();
    event.reply('#bodyTypeSelection_reply', { bodyType: event.captured[0].toLowerCase() })
    //event.reply('#carouselOfCities', { items:this.catalog })
 })
