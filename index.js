@@ -19,7 +19,7 @@
   Our Slack Community: https://slack.botpress.io
 */
 
-import staticData from './static_data';
+//import staticData from './static_data';
 module.exports = function(bp) {
 
     //const staticData = require('./static_data');
