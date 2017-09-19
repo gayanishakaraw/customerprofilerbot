@@ -19,10 +19,10 @@
   Our Slack Community: https://slack.botpress.io
 */
 
-
+import staticData from './static_data';
 module.exports = function(bp) {
 
- // const staticData = require('../static_data');
+    //const staticData = require('./static_data');
 
     //var username = profile.id;
     var gender = undefined;
@@ -134,8 +134,9 @@ bp.hear('STORESELECTION_REPLY.QR_OVEL_BUTTON', (event, next) => {
 bp.hear('MENU_SEND_EX_04', (event, next) => {
   event.reply('#carouselOfCities', { items: staticData.items })
 })
+
 //bp.hear('QR_TRANGLE_BUTTON', (event, next) => {
- // event.reply('#carouselOfCities', { items:this.catalog })
+//  event.reply('#carouselOfCities', { items:this.catalog })
 //})
 }
 
